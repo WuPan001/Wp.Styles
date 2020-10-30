@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style x:Key="TextBaseStyle"
+		   TargetType="TextBlock">
+		<Setter Property="VerticalAlignment"
+				Value="Center" />
+		<Setter Property="HorizontalAlignment"
+				Value="Center" />
+	</Style>
+	<Style x:Key="MainTextStyle"
+		   TargetType="TextBlock"
+		   BasedOn="{StaticResource TextBaseStyle}">
+		<Setter Property="FontSize"
+				Value="26" />
+		<Setter Property="Foreground"
+				Value="{StaticResource MainSolidColorBurshStyle}" />
+	</Style>
+	<Style x:Key="SecondaryTextStyle"
+		   TargetType="TextBlock"
+		   BasedOn="{StaticResource TextBaseStyle}">
+		<Setter Property="FontSize"
+				Value="20" />
+		<Setter Property="Foreground"
+				Value="{StaticResource SecondarySolidColorBurshStyle}" />
+	</Style>
+	<Style x:Key="TertiaryTextStyle"
+		   TargetType="TextBlock"
+		   BasedOn="{StaticResource TextBaseStyle }">
+		<Setter Property="FontSize"
+				Value="16" />
+		<Setter Property="Foreground"
+				Value="{StaticResource TertiarySolidColorBurshStyle}" />
+	</Style>
+</ResourceDictionary>
